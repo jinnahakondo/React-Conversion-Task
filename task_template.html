@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DOM Challenge</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white p-8">
+
+  <!-- Product Grid -->
+  <div
+    id="productContainer"
+    class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+  >
+
+    <!-- Card 1 -->
+    <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden w-full max-w-sm">
+
+      <img
+        class="w-full h-48 object-cover"
+        src="https://dummyimage.com/600x400/111827/ffffff&text=Mechanical+Keyboard"
+        alt="product"
+      >
+
+      <div class="p-5 space-y-4">
+
+        <div class="flex justify-between items-start">
+
+          <div>
+            <h2 class="font-bold text-lg">
+              Mechanical Keyboard
+            </h2>
+
+            <p class="text-sm text-slate-400">
+              RGB Gaming Keyboard
+            </p>
+          </div>
+
+          <button class="wishlistBtn text-xl">
+            ♡
+          </button>
+
+        </div>
+
+        <!-- Price -->
+        <div class="flex justify-between">
+          <span class="text-slate-400">
+            Price
+          </span>
+
+          <span class="font-bold text-cyan-400 unitPrice">
+            $120
+          </span>
+        </div>
+
+        <!-- Stock -->
+        <div class="flex justify-between">
+          <span class="text-slate-400">
+            Remaining Stock
+          </span>
+
+          <span class="stock text-yellow-400 font-semibold">
+            8 Left
+          </span>
+        </div>
+
+        <!-- Quantity -->
+        <div class="flex justify-between items-center">
+
+          <span class="text-slate-400">
+            Quantity
+          </span>
+
+          <div class="flex gap-3 items-center">
+
+            <button class="minusBtn bg-slate-800 w-8 h-8 rounded-lg">
+              -
+            </button>
+
+            <span class="quantity font-bold">
+              1
+            </span>
+
+            <button class="plusBtn bg-slate-800 w-8 h-8 rounded-lg">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Total -->
+        <div class="flex justify-between border-t border-slate-800 pt-4">
+
+          <span>
+            Total
+          </span>
+
+          <span class="total font-bold text-cyan-400">
+            $120
+          </span>
+
+        </div>
+
+        <!-- Cart -->
+        <button
+          class="cartBtn w-full bg-cyan-600 rounded-xl py-3 font-semibold"
+        >
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden w-full max-w-sm">
+
+      <img
+        class="w-full h-48 object-cover"
+        src="https://dummyimage.com/600x400/111827/ffffff&text=Wireless+Mouse"
+        alt="product"
+      >
+
+      <div class="p-5 space-y-4">
+
+        <div class="flex justify-between items-start">
+
+          <div>
+            <h2 class="font-bold text-lg">
+              Wireless Mouse
+            </h2>
+
+            <p class="text-sm text-slate-400">
+              Ultra Fast Sensor
+            </p>
+          </div>
+
+          <button class="wishlistBtn text-xl">
+            ♡
+          </button>
+
+        </div>
+
+        <div class="flex justify-between">
+          <span class="text-slate-400">
+            Price
+          </span>
+
+          <span class="font-bold text-cyan-400 unitPrice">
+            $80
+          </span>
+        </div>
+
+        <div class="flex justify-between">
+          <span class="text-slate-400">
+            Remaining Stock
+          </span>
+
+          <span class="stock text-yellow-400 font-semibold">
+            5 Left
+          </span>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <span class="text-slate-400">
+            Quantity
+          </span>
+
+          <div class="flex gap-3 items-center">
+
+            <button class="minusBtn bg-slate-800 w-8 h-8 rounded-lg">
+              -
+            </button>
+
+            <span class="quantity font-bold">
+              1
+            </span>
+
+            <button class="plusBtn bg-slate-800 w-8 h-8 rounded-lg">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="flex justify-between border-t border-slate-800 pt-4">
+
+          <span>
+            Total
+          </span>
+
+          <span class="total font-bold text-cyan-400">
+            $80
+          </span>
+
+        </div>
+
+        <button
+          class="cartBtn w-full bg-cyan-600 rounded-xl py-3 font-semibold"
+        >
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</body>
+</html>
