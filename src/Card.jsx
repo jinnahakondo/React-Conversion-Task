@@ -79,7 +79,7 @@ export default function Card({
                     </span>
 
                     <span className="stock text-yellow-400 font-semibold">
-                        {stock} Left
+                        {stock === 0 ? "Out Of Stock" : `${stock} Left`}
                     </span>
                 </div>
 
